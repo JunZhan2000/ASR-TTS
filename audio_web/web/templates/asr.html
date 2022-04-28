@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ASR语音识别</title>
+    <style></style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" type="text/css">
+</head>
+<body>
+    <div id="one-form">
+        <div id="top-text">ASR语音识别</div>
+        <textarea type="text" name="content" id="content" placeholder="识别结果">{{content}}</textarea>
+        <div class="app">
+            <button class="record-btn">开始录制</button>
+            <audio controls class="audio-player"></audio>
+            <a style="text-decoration:none;" href="{{ url_for('asr_fc_result') }}">
+                <button class="submit-but">上传识别</button>
+            </a>
+        </div>
+    </div>
+    <script src="../static/recorder.js"></script>
+</body>
+</html>

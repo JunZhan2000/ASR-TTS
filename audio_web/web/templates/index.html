@@ -1,0 +1,20 @@
+<!doctype html>
+<html dir="ltr" lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>语音合成与识别系统</title>
+    <style></style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" type="text/css">
+  </head>
+  <body>
+    <div id="one-form">
+      <div class="top-text">语音合成与识别系统</div>
+      <div class="result-box">
+          <a style="text-decoration:none;" class="submit-but3" href = "{{ url_for('asr_fc') }}" class="button">语音识别入口 -></a>
+      </div>
+      <div class="result-box">
+          <a style="text-decoration:none;" class="submit-but3" href = "{{ url_for('tts_fc') }}" class="button">语音合成入口 -></a>
+      </div>
+    </div>
+  </body>
+</html>

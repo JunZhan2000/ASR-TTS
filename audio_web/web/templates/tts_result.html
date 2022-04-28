@@ -1,0 +1,25 @@
+<!doctype html>
+<html dir="ltr" lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>TTS语音合成</title>
+    <style></style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" type="text/css">
+  </head>
+  <body>
+    <div id="one-form">
+      <div id="top-text">TTS语音合成</div>
+        <form method="post">  <!-- 指定提交方法为 POST -->
+            <label for="content"></label>
+            <textarea type="text" name="content" id="content" placeholder="请输入想说的话" required>{{content}}</textarea>  <!-- 文本输入框 -->
+            <div id="result-box">
+                <input type="submit" class="submit-but" name="submit" value="合成语音">  <!-- 提交按钮 -->
+                <audio controls autoplay="true">
+                    <source src="{{audio_path}}" type="audio/wav">
+                    Your browser does not support this audio format.
+                </audio>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>

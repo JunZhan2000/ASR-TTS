@@ -1,0 +1,3 @@
+/Users/zhanjun/毕设/dataset/AISHELL-1_sample/S0252/S0252_mic/BAC009S0252W0001.wav	嗯变温温度设为两度
+/Users/zhanjun/毕设/dataset/AISHELL-1_sample/S0252/S0252_mic/BAC009S0252W0002.wav	变温温度设为两度档
+/Users/zhanjun/毕设/dataset/AISHELL-1_sample/S0252/S0252_mic/BAC009S0252W0003.wav	变温温度设为两摄氏度档
